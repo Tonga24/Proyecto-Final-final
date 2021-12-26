@@ -1,0 +1,90 @@
+@import './base/resets';
+@import './base/base';
+@import './layout/header';
+@import './layout/main';
+@import './layout/footer.scss';
+
+
+@media screen and (max-width:550px){
+    
+    /* header */
+    header{
+        background-position: center;
+        .titulo{
+            font-size: 25px;
+        }
+        
+    }
+    
+    .textos-header{
+        h1{font-size: 35px;
+        }
+        h2{
+            font-size: 20px;
+            margin-bottom: 200px;
+            }  
+        
+    }  
+    
+    
+      /* Sobre Mi */
+    .contenedor-sobre-nosotros{
+        img{height: 150px;
+        }
+        
+    }
+    .contenido-textos{
+        p{font-size: 12px;
+        }
+    }
+
+    /* Porfolio */
+
+    .imagen-port{
+        
+        width: 100%;
+        height: 100px;
+    }
+
+    /* Mis Redes */
+    .contenedor-sobre-redes{
+       .imagen-sobre-redes{
+        width: 48%;
+        margin-left: 90px;
+        
+    }
+    }
+    /* Contactos */
+    
+    .content-foo{
+        h4{font-size: 14px;
+        }
+    }
+    .content-foo{
+        p{font-size: 14px;
+        }
+    }
+    .titulo-final{
+        
+        font-size: 14px;
+        
+       
+    }
+    
+
+
+    
+
+     
+        
+    
+    
+
+    
+    
+
+
+
+
+ }
+

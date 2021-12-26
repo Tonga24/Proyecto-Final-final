@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif; }
+
+.contenedor {
+  padding: 60px 0;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden; }
+
+.titulo {
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 60px;
+  animation-duration: 5s;
+  animation-name: titulos;
+  animation-iteration-count: infinite; }
+
+@keyframes titulos {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+header {
+  width: 100%;
+  height: 600px;
+  background: #2980B9;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, rgba(255, 255, 255, 0.591), rgba(107, 212, 250, 0.605), #2980B9), url(/ilustraciones/undraw_programming_re_kg9v.svg);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.591), rgba(107, 212, 250, 0.605), #2980B9), url(/ilustraciones/undraw_programming_re_kg9v.svg);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-attachment: fixed;
+  position: relative; }
+  header .textos-header {
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center; }
+    header .textos-header h1 {
+      font-size: 50px;
+      color: #fff; }
+    header .textos-header h2 {
+      font-size: 30px;
+      font-weight: 300;
+      color: black; }
+
+.ola {
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+
+/* sobre Mi */
+.contenedor-sobre-nosotros {
+  display: flex;
+  justify-content: space-evenly; }
+  .contenedor-sobre-nosotros .imagen-sobre-mi {
+    width: 48%; }
+  .contenedor-sobre-nosotros p {
+    padding: 0px 0px 30px 20px;
+    font-weight: 300;
+    text-align: justify; }
+
+/* portfolio */
+.portfolio {
+  background: #bdedff; }
+
+.galeria-port {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center; }
+  .galeria-port .imagen-port {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5); }
+    .galeria-port .imagen-port img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block; }
+    .galeria-port .imagen-port .hover-galeria {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      transform: scale(0);
+      background: rgba(6, 113, 132, 0.7);
+      transition: transform .5s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .galeria-port .imagen-port .hover-galeria img {
+        width: 50px; }
+      .galeria-port .imagen-port .hover-galeria p {
+        color: #fff; }
+  .galeria-port .imagen-port:hover .hover-galeria {
+    transform: scale(1); }
+
+/* Mis redes */
+.contenedor-sobre-redes {
+  display: flex;
+  justify-content: space-between; }
+  .contenedor-sobre-redes .imagen-sobre-redes {
+    width: 48%;
+    margin-left: 250px; }
+
+/* Footer */
+footer {
+  background: #bdedff;
+  padding: 60px 0 30px 0;
+  margin: auto;
+  overflow: hidden; }
+
+.contenedor-footer {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #ccc; }
+  .contenedor-footer .content-foo {
+    text-align: center; }
+    .contenedor-footer .content-foo h4 {
+      color: #fff;
+      border-bottom: 3px solid cornflowerblue;
+      padding-bottom: 5px;
+      margin-bottom: 10px; }
+
+.titulo-final {
+  text-align: center;
+  font-size: 24px;
+  margin: 20px 0 0 0;
+  color: #0b0a0a; }
+
+@media screen and (max-width: 550px) {
+  /* header */
+  header {
+    background-position: center; }
+    header .titulo {
+      font-size: 25px; }
+  .textos-header h1 {
+    font-size: 35px; }
+  .textos-header h2 {
+    font-size: 20px;
+    margin-bottom: 200px; }
+  /* Sobre Mi */
+  .contenedor-sobre-nosotros img {
+    height: 150px; }
+  .contenido-textos p {
+    font-size: 12px; }
+  /* Porfolio */
+  .imagen-port {
+    width: 100%;
+    height: 100px; }
+  /* Mis Redes */
+  .contenedor-sobre-redes .imagen-sobre-redes {
+    width: 48%;
+    margin-left: 90px; }
+  /* Contactos */
+  .content-foo h4 {
+    font-size: 14px; }
+  .content-foo p {
+    font-size: 14px; }
+  .titulo-final {
+    font-size: 14px; } }
