@@ -1,3 +1,10 @@
+/* Mapa */ 
+$colores:(
+    negro: black,
+    azul:#2980B9,
+    blanco:#fff,
+    celeste:#bdedff,
+);
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -9,7 +16,7 @@ body{
     overflow: hidden;
 }
 .titulo{
-    color:black;
+    color:map-get($map: $colores, $key:negro );
     font-size: 30px;
     text-align: center;
     margin-bottom: 60px;

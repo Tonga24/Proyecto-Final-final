@@ -1,8 +1,12 @@
+
 @import './base/resets';
 @import './base/base';
 @import './layout/header';
 @import './layout/main';
 @import './layout/footer.scss';
+
+
+
 
 
 @media screen and (max-width:550px){
@@ -67,6 +71,7 @@
     .titulo-final{
         
         font-size: 14px;
+        
         
        
     }

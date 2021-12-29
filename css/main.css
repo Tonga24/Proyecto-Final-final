@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box; }
 
+/* Mapa */
 body {
   font-family: Georgia, 'Times New Roman', Times, serif; }
 
@@ -28,6 +29,7 @@ body {
   100% {
     opacity: 1; } }
 
+/* Mapa */
 header {
   width: 100%;
   height: 600px;
@@ -41,15 +43,15 @@ header {
   position: relative; }
   header .textos-header {
     display: flex;
-    height: 430px;
-    width: 100%;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    height: 430px;
+    width: 100%;
     text-align: center; }
     header .textos-header h1 {
       font-size: 50px;
-      color: #fff; }
+      color: black; }
     header .textos-header h2 {
       font-size: 30px;
       font-weight: 300;
@@ -60,6 +62,7 @@ header {
   bottom: 0;
   width: 100%; }
 
+/* Mapa */
 /* sobre Mi */
 .contenedor-sobre-nosotros {
   display: flex;
@@ -121,6 +124,7 @@ header {
     width: 48%;
     margin-left: 250px; }
 
+/* Mapa */
 /* Footer */
 footer {
   background: #bdedff;
@@ -138,7 +142,7 @@ footer {
   .contenedor-footer .content-foo {
     text-align: center; }
     .contenedor-footer .content-foo h4 {
-      color: #fff;
+      color: black;
       border-bottom: 3px solid cornflowerblue;
       padding-bottom: 5px;
       margin-bottom: 10px; }
@@ -147,7 +151,7 @@ footer {
   text-align: center;
   font-size: 24px;
   margin: 20px 0 0 0;
-  color: #0b0a0a; }
+  color: black; }
 
 @media screen and (max-width: 550px) {
   /* header */

@@ -1,3 +1,10 @@
+/* Mapa */ 
+$colores:(
+    negro: black,
+    azul:#2980B9,
+    blanco:#fff,
+    celeste:#bdedff,
+);
 /* sobre Mi */
 .contenedor-sobre-nosotros{
     display: flex;
@@ -19,7 +26,7 @@
 /* portfolio */
 
 .portfolio{
-    background: #bdedff;
+    background:map-get($map: $colores, $key:celeste );
 }
 
 .galeria-port{
@@ -60,7 +67,7 @@
              
              }
             p{
-                color: #fff;
+                color: map-get($map: $colores, $key:blanco );
             }
             
             
